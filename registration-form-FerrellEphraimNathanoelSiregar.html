@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+
+    <h2>Formulir Pendaftaran Siswa</h2>
+    
+    <!-- Tag form untuk memulai formulir -->
+    <form method="POST" action="http://localhost/echo.py">
+        
+        <!-- Text Input -->
+        <p>
+            Nama Lengkap: <br>
+            <input type="text" name="nama" required>
+        </p>
+
+        <!-- Email Input -->
+        <p>
+            Alamat Email: <br>
+            <input type="email" name="email" required>
+        </p>
+
+        <!-- Radio Buttons -->
+        <p>
+            Jenis Kelamin: <br>
+            <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+            <input type="radio" name="gender" value="Perempuan"> Perempuan
+        </p>
+
+        <!-- Dropdown / Select Options -->
+        <p>
+            Program Studi: <br>
+            <select name="program_studi">
+                <option value="Web Development">Web Development</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Ssistem Informasi">Sistem Informasi</option>.
+            </select>
+        </p>
+
+        <!-- Checkboxes -->
+        <p>
+            Keahlian Dasar yang Dimiliki (Bisa pilih lebih dari satu): <br>
+            <input type="checkbox" name="keahlian" value="HTML"> HTML
+            <input type="checkbox" name="keahlian" value="CSS"> CSS
+            <input type="checkbox" name="keahlian" value="JavaScript"> JavaScript
+            <input type="checkbox" name="keahlian" value="PHP"> PHP
+        </p>
+
+        <!-- Textarea -->
+        <p>
+            Alasan Mengikuti Kursus: <br>
+            <textarea name="alasan" rows="5" cols="50"></textarea>
+        </p>
+
+        <!-- Form Buttons -->
+        <p>
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset Form">
+        </p>
+
+    </form>
+
+</body>
+</html>
